@@ -30,17 +30,18 @@ public class Shooting : MonoBehaviour
     {
         mousePosition = Input.mousePosition;
 
-        GameObject weapon = GameObject.FindGameObjectWithTag("MainWeapon");
+        GameObject weapon = GameObject.FindGameObjectWithTag("EquippedWeapon");
         weaponPosition = weapon.transform.position;
 
         // Translates player position in game into player position on screen
-        Camera cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        Vector3 offset = cam.WorldToScreenPoint(weaponPosition);
+        Vector3 offset = Camera.main.WorldToScreenPoint(weaponPosition);
         mousePosition -= offset;
     }
 
     private void Update()
     {
+        canShoot = gameObject.tag == "EquippedWeapon" ? canShoot : false;
+
         if (Input.GetButton("Fire1") && canShoot)
         {
             Positions();

@@ -15,6 +15,8 @@ public class RoomSpawner : MonoBehaviour
     private bool spawned;
     private int rand;
 
+    private GameObject room;
+
     private void Start()
     {
         spawned = false;
@@ -27,40 +29,36 @@ public class RoomSpawner : MonoBehaviour
 
     private void Spawn()
     {
-        //Func<int, int, int> random = new Func<int, int, int>(UnityEngine.Random.Range);
-
         if (!spawned)
         {
-            GameObject room;
-
             switch (openingDirection)
             {
                 case 1:
                     rand = UnityEngine.Random.Range(0, templates.topRooms.Length);
                     room = Instantiate(templates.topRooms[rand], transform.position, Quaternion.identity);
 
-                    room.GetComponent<AddRoom>().requiredOpening = openingDirection;
+                    Invoke("SetOpening", .1f);
                     break;
 
                 case 2:
                     rand = UnityEngine.Random.Range(0, templates.rightRooms.Length);
                     room = Instantiate(templates.rightRooms[rand], transform.position, Quaternion.identity);
 
-                    room.GetComponent<AddRoom>().requiredOpening = openingDirection;
+                    Invoke("SetOpening", .1f);
                     break;
 
                 case 3:
                     rand = UnityEngine.Random.Range(0, templates.bottomRooms.Length);
                     room = Instantiate(templates.bottomRooms[rand], transform.position, Quaternion.identity);
 
-                    room.GetComponent<AddRoom>().requiredOpening = openingDirection;
+                    Invoke("SetOpening", .1f);
                     break;
 
                 case 4:
                     rand = UnityEngine.Random.Range(0, templates.leftRooms.Length);
                     room = Instantiate(templates.leftRooms[rand], transform.position, Quaternion.identity);
 
-                    room.GetComponent<AddRoom>().requiredOpening = openingDirection;
+                    Invoke("SetOpening", .1f);
                     break;
 
                 default:
@@ -69,6 +67,11 @@ public class RoomSpawner : MonoBehaviour
 
             spawned = true;
         }
+    }
+
+    private void SetOpening()
+    {
+        room.GetComponent<AddRoom>().requiredOpening = openingDirection;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

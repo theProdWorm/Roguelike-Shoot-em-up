@@ -12,7 +12,7 @@ public class Bullet_Movement : MonoBehaviour
     {
         travelledDistance = new Vector3(0, 0, 0);
 
-        weaponStats = GameObject.FindGameObjectWithTag("MainWeapon").GetComponent<Shooting>();
+        weaponStats = GameObject.FindGameObjectWithTag("EquippedWeapon").GetComponent<Shooting>();
     }
 
     public void Angle(float bullet, Vector3 mousePosition, Vector3 weaponPosition)
