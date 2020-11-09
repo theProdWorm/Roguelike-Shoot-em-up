@@ -1,13 +1,9 @@
-﻿using JetBrains.Annotations;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics.Contracts;
-using UnityEngine;
-using UnityEngine.Networking;
-using UnityEngine.UIElements;
+﻿using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
+    public Transform weaponTrans;
+
     private GameObject weapon;
 
     private bool inRange = false; // "Can pick up"
@@ -33,6 +29,16 @@ public class Pickup : MonoBehaviour
         inRange = false;
     }
 
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && inRange)
+            PickupWeapon();
+
+        if (Input.GetKeyDown(KeyCode.G) && weaponEquipped)
+            Drop();
+
+    }
+
     void PickupWeapon() 
     {
         if (!weaponEquipped)
@@ -41,37 +47,28 @@ public class Pickup : MonoBehaviour
             weapon.GetComponent<Shooting>().enabled = true;
 
             // Set position and parent to follow the player around
-            Transform weaponTrans = weapon.transform;
             weapon.transform.SetParent(weaponTrans);
             weapon.transform.position = weaponTrans.position;
 
             // Tell the program that the weapon has been equipped
+            weapon.tag = "EquippedWeapon";
             weaponEquipped = true;
-            weapon.tag = "MainWeapon";
         }
-
-    }
-
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E) && inRange && weaponEquipped)
-            PickupWeapon();
-
-        if (Input.GetKeyDown(KeyCode.G) && weaponEquipped)
-            Drop();
 
     }
 
     void Drop()
     {
+        GameObject equippedWeapon = transform.GetChild(0).GetChild(0).gameObject;
+
         // Disable shooting for the weapon
-        weapon.GetComponent<Shooting>().enabled = false;
+        equippedWeapon.GetComponent<Shooting>().enabled = false;
 
         // Force the player to abandon their child
-        weapon.transform.SetParent(null);
+        equippedWeapon.transform.SetParent(null);
 
         // Tell the program that the weapon has been drop
+        equippedWeapon.tag = "Weapon";
         weaponEquipped = false;
-        weapon.tag = "Weapon";
     }
 }

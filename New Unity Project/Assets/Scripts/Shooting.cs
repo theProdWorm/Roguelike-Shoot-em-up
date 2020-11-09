@@ -18,7 +18,7 @@ public class Shooting : MonoBehaviour
 
     public GameObject Bullet;
 
-    private Vector3 weaponPosition, mousePosition;
+    private Vector3 mousePosition;
     private bool canShoot;
 
     private void Start()
@@ -30,18 +30,13 @@ public class Shooting : MonoBehaviour
     {
         mousePosition = Input.mousePosition;
 
-        GameObject weapon = GameObject.FindGameObjectWithTag("EquippedWeapon");
-        weaponPosition = weapon.transform.position;
-
         // Translates player position in game into player position on screen
-        Vector3 offset = Camera.main.WorldToScreenPoint(weaponPosition);
+        Vector3 offset = Camera.main.WorldToScreenPoint(transform.position);
         mousePosition -= offset;
     }
 
     private void Update()
     {
-        canShoot = gameObject.tag == "EquippedWeapon" ? canShoot : false;
-
         if (Input.GetButton("Fire1") && canShoot)
         {
             Positions();
@@ -66,7 +61,7 @@ public class Shooting : MonoBehaviour
 
             float spread = Spread ? FireSpread(i + 1) : 0;
 
-            bullet.GetComponent<Bullet_Movement>().Angle(spread, mousePosition, weaponPosition);
+            bullet.GetComponent<Bullet_Movement>().Angle(spread, mousePosition, transform.position);
         }
 
         StartCoroutine(FireDelay());
@@ -82,7 +77,7 @@ public class Shooting : MonoBehaviour
 
             float spread = Spread ? FireSpread(i + 1) : 0;
 
-            bullet.GetComponent<Bullet_Movement>().Angle(spread, mousePosition, weaponPosition);
+            bullet.GetComponent<Bullet_Movement>().Angle(spread, mousePosition, transform.position);
 
             yield return new WaitForFixedUpdate();
             yield return new WaitForSecondsRealtime(BurstDelay);
