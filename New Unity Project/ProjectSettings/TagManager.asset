@@ -6,7 +6,6 @@ TagManager:
   tags:
   - SpawnPoint
   - Weapon
-  - EquippedWeapon
   layers:
   - Default
   - TransparentFX

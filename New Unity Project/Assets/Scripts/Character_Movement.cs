@@ -2,8 +2,6 @@
 
 public class Character_Movement : MonoBehaviour
 {
-    public float speed;
-
     private Rigidbody2D myRB;
 
     void Start()
@@ -13,6 +11,6 @@ public class Character_Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        myRB.velocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speed;
+        myRB.velocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speed * Time.deltaTime;
     }
 }
