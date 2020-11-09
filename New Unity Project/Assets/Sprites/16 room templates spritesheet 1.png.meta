@@ -1,0 +1,1220 @@
+fileFormatVersion: 2
+guid: 2a61ab9eab065764585197a6ed24f1d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4731124416519189749
+    second: B
+  - first:
+      213: -1665506872428005516
+    second: BL
+  - first:
+      213: -7276200266080297854
+    second: L
+  - first:
+      213: -7392869708892381144
+    second: Closed
+  - first:
+      213: 2069294450713812762
+    second: R
+  - first:
+      213: -7655366609599537771
+    second: RB
+  - first:
+      213: 6851658033146156585
+    second: RBL
+  - first:
+      213: -3808694499167258308
+    second: RL
+  - first:
+      213: 3945510773328416309
+    second: T
+  - first:
+      213: 1323937655396590394
+    second: TB
+  - first:
+      213: 2772304849960539463
+    second: TBL
+  - first:
+      213: 1964222463953817506
+    second: TL
+  - first:
+      213: 2564564525120950149
+    second: TR
+  - first:
+      213: -8438597107277075515
+    second: TRB
+  - first:
+      213: -13802915316503585
+    second: TRBL
+  - first:
+      213: -5894605125545075005
+    second: TRL
+  - first:
+      213: -6156725135665158996
+    second: 16 room templates spritesheet 1_16
+  - first:
+      213: 2626867175533594839
+    second: 16 room templates spritesheet 1_17
+  - first:
+      213: -4168759030710151721
+    second: 16 room templates spritesheet 1_18
+  - first:
+      213: -1411563822553656908
+    second: 16 room templates spritesheet 1_19
+  - first:
+      213: -1816924897538303731
+    second: 16 room templates spritesheet 1_20
+  - first:
+      213: -8695291791411076091
+    second: 16 room templates spritesheet 1_21
+  - first:
+      213: -1099227835647184210
+    second: 16 room templates spritesheet 1_22
+  - first:
+      213: 7320308756711502107
+    second: 16 room templates spritesheet 1_23
+  - first:
+      213: -4303469058957273171
+    second: 16 room templates spritesheet 1_24
+  - first:
+      213: -1970597931226409456
+    second: 16 room templates spritesheet 1_25
+  - first:
+      213: -443180254897314960
+    second: 16 room templates spritesheet 1_26
+  - first:
+      213: 5807112968598823692
+    second: 16 room templates spritesheet 1_27
+  - first:
+      213: 4512396282913360320
+    second: 16 room templates spritesheet 1_28
+  - first:
+      213: -5240449583542576956
+    second: 16 room templates spritesheet 1_29
+  - first:
+      213: 4309499966653859767
+    second: 16 room templates spritesheet 1_30
+  - first:
+      213: -6848498612124636673
+    second: 16 room templates spritesheet 1_31
+  - first:
+      213: 9210946037416298344
+    second: 16 room templates spritesheet 1_32
+  - first:
+      213: 6069349339857795409
+    second: 16 room templates spritesheet 1_33
+  - first:
+      213: 3253376798337737702
+    second: 16 room templates spritesheet 1_34
+  - first:
+      213: 8957569856045136137
+    second: 16 room templates spritesheet 1_35
+  - first:
+      213: 5944232133990115924
+    second: 16 room templates spritesheet 1_36
+  - first:
+      213: 772129950980934489
+    second: 16 room templates spritesheet 1_37
+  - first:
+      213: -8658617097716308152
+    second: 16 room templates spritesheet 1_38
+  - first:
+      213: -565992578326217470
+    second: 16 room templates spritesheet 1_39
+  - first:
+      213: -1185245822719050995
+    second: 16 room templates spritesheet 1_40
+  - first:
+      213: -5746094766527213054
+    second: 16 room templates spritesheet 1_41
+  - first:
+      213: -6300175460583171339
+    second: 16 room templates spritesheet 1_42
+  - first:
+      213: -4548397642032095132
+    second: 16 room templates spritesheet 1_43
+  - first:
+      213: -3656217698101437220
+    second: 16 room templates spritesheet 1_44
+  - first:
+      213: 3428166295818706656
+    second: 16 room templates spritesheet 1_45
+  - first:
+      213: 556258420438411817
+    second: 16 room templates spritesheet 1_46
+  - first:
+      213: -9044518435088256889
+    second: 16 room templates spritesheet 1_47
+  - first:
+      213: -1124153073119884339
+    second: 16 room templates spritesheet 1_48
+  - first:
+      213: 6027517166217833049
+    second: 16 room templates spritesheet 1_49
+  - first:
+      213: -1704061114074726906
+    second: 16 room templates spritesheet 1_50
+  - first:
+      213: -3808228087167559219
+    second: 16 room templates spritesheet 1_51
+  - first:
+      213: -8660809463755945305
+    second: 16 room templates spritesheet 1_52
+  - first:
+      213: -3251013197543278320
+    second: 16 room templates spritesheet 1_53
+  - first:
+      213: 990727137702656870
+    second: 16 room templates spritesheet 1_54
+  - first:
+      213: -619944187907069936
+    second: 16 room templates spritesheet 1_55
+  - first:
+      213: 1567556994599117162
+    second: 16 room templates spritesheet 1_56
+  - first:
+      213: 8317003946223979646
+    second: 16 room templates spritesheet 1_57
+  - first:
+      213: 7279834175142108512
+    second: 16 room templates spritesheet 1_58
+  - first:
+      213: -5117485338832467883
+    second: 16 room templates spritesheet 1_59
+  - first:
+      213: 3124442056534023970
+    second: 16 room templates spritesheet 1_60
+  - first:
+      213: 4940209592736509082
+    second: 16 room templates spritesheet 1_61
+  - first:
+      213: -6627455757375418989
+    second: 16 room templates spritesheet 1_62
+  - first:
+      213: -3732967592763550891
+    second: 16 room templates spritesheet 1_63
+  - first:
+      213: -6896344572702894179
+    second: 16 room templates spritesheet 1_64
+  - first:
+      213: -5349601366903476525
+    second: 16 room templates spritesheet 1_65
+  - first:
+      213: -4242776535741615148
+    second: 16 room templates spritesheet 1_66
+  - first:
+      213: -2650077938613739776
+    second: 16 room templates spritesheet 1_67
+  - first:
+      213: -5795160087592140026
+    second: 16 room templates spritesheet 1_68
+  - first:
+      213: 1714542108162961007
+    second: 16 room templates spritesheet 1_69
+  - first:
+      213: 3429372337556793968
+    second: 16 room templates spritesheet 1_70
+  - first:
+      213: 4659379929393228622
+    second: 16 room templates spritesheet 1_71
+  - first:
+      213: 5566407300003839496
+    second: 16 room templates spritesheet 1_72
+  - first:
+      213: -2535173507806781240
+    second: 16 room templates spritesheet 1_73
+  - first:
+      213: 9203456067998227254
+    second: 16 room templates spritesheet 1_74
+  - first:
+      213: 6197919915624583346
+    second: 16 room templates spritesheet 1_75
+  - first:
+      213: -4830914998713819543
+    second: 16 room templates spritesheet 1_76
+  - first:
+      213: -1820967561496250178
+    second: 16 room templates spritesheet 1_77
+  - first:
+      213: -1563295327810860057
+    second: 16 room templates spritesheet 1_78
+  - first:
+      213: 5159548022487545035
+    second: 16 room templates spritesheet 1_79
+  - first:
+      213: 6315799830346000277
+    second: 16 room templates spritesheet 1_80
+  - first:
+      213: -952442779070303702
+    second: 16 room templates spritesheet 1_81
+  - first:
+      213: 4000628177632663253
+    second: 16 room templates spritesheet 1_82
+  - first:
+      213: 5961553887777024635
+    second: 16 room templates spritesheet 1_83
+  - first:
+      213: -598751800298041411
+    second: 16 room templates spritesheet 1_84
+  - first:
+      213: 1211371259428096642
+    second: 16 room templates spritesheet 1_85
+  - first:
+      213: 1162333303074465281
+    second: 16 room templates spritesheet 1_86
+  - first:
+      213: -4299545620768752348
+    second: 16 room templates spritesheet 1_87
+  - first:
+      213: 1073610010067743400
+    second: 16 room templates spritesheet 1_88
+  - first:
+      213: -9184921144967401516
+    second: 16 room templates spritesheet 1_89
+  - first:
+      213: -4368539257983978022
+    second: 16 room templates spritesheet 1_90
+  - first:
+      213: -4142023076559251444
+    second: 16 room templates spritesheet 1_91
+  - first:
+      213: -6878658504656620434
+    second: 16 room templates spritesheet 1_92
+  - first:
+      213: -8373351628124641908
+    second: 16 room templates spritesheet 1_93
+  - first:
+      213: 2036121051394092004
+    second: 16 room templates spritesheet 1_94
+  - first:
+      213: 2877387986630626922
+    second: 16 room templates spritesheet 1_95
+  - first:
+      213: 941189316154265217
+    second: 16 room templates spritesheet 1_96
+  - first:
+      213: 426220258832512075
+    second: 16 room templates spritesheet 1_97
+  - first:
+      213: 1725032877802110369
+    second: 16 room templates spritesheet 1_98
+  - first:
+      213: -5867393657279473561
+    second: 16 room templates spritesheet 1_99
+  - first:
+      213: -3753026992276430753
+    second: 16 room templates spritesheet 1_100
+  - first:
+      213: -5202187638122273185
+    second: 16 room templates spritesheet 1_101
+  - first:
+      213: 6290966274125682400
+    second: 16 room templates spritesheet 1_102
+  - first:
+      213: -577506525413841223
+    second: 16 room templates spritesheet 1_103
+  - first:
+      213: -2233149584364521495
+    second: 16 room templates spritesheet 1_104
+  - first:
+      213: -5176200801084203365
+    second: 16 room templates spritesheet 1_105
+  - first:
+      213: 2755763438627959003
+    second: 16 room templates spritesheet 1_106
+  - first:
+      213: -6636638183465469661
+    second: 16 room templates spritesheet 1_107
+  - first:
+      213: 4173065391405366267
+    second: 16 room templates spritesheet 1_108
+  - first:
+      213: 1791813329427117705
+    second: 16 room templates spritesheet 1_109
+  - first:
+      213: 7609183164685974242
+    second: 16 room templates spritesheet 1_110
+  - first:
+      213: -1726518053421199349
+    second: 16 room templates spritesheet 1_111
+  - first:
+      213: -196704032221408034
+    second: 16 room templates spritesheet 1_112
+  - first:
+      213: -3597798927514535639
+    second: 16 room templates spritesheet 1_113
+  - first:
+      213: -1507133531643294827
+    second: 16 room templates spritesheet 1_114
+  - first:
+      213: 3150914669767632444
+    second: 16 room templates spritesheet 1_115
+  - first:
+      213: 3590687479497002072
+    second: 16 room templates spritesheet 1_116
+  - first:
+      213: -3543903350020813310
+    second: 16 room templates spritesheet 1_117
+  - first:
+      213: 1924487321838699981
+    second: 16 room templates spritesheet 1_118
+  - first:
+      213: 1394486317266008779
+    second: 16 room templates spritesheet 1_119
+  - first:
+      213: -5518111303195734557
+    second: 16 room templates spritesheet 1_120
+  - first:
+      213: -7101891322298212989
+    second: 16 room templates spritesheet 1_121
+  - first:
+      213: -5025655095943378537
+    second: 16 room templates spritesheet 1_122
+  - first:
+      213: -5305383635975611164
+    second: 16 room templates spritesheet 1_123
+  - first:
+      213: 1829411323581055233
+    second: 16 room templates spritesheet 1_124
+  - first:
+      213: -3098085859218511001
+    second: 16 room templates spritesheet 1_125
+  - first:
+      213: 8962853185400829390
+    second: 16 room templates spritesheet 1_126
+  - first:
+      213: 931155973830857846
+    second: 16 room templates spritesheet 1_127
+  - first:
+      213: -5536822603881787190
+    second: 16 room templates spritesheet 1_128
+  - first:
+      213: 2617464050140506728
+    second: 16 room templates spritesheet 1_129
+  - first:
+      213: -8589705591905840658
+    second: 16 room templates spritesheet 1_130
+  - first:
+      213: -4767486574357994886
+    second: 16 room templates spritesheet 1_131
+  - first:
+      213: -8929814965514435979
+    second: 16 room templates spritesheet 1_132
+  - first:
+      213: 7966972262810081485
+    second: 16 room templates spritesheet 1_133
+  - first:
+      213: 3280913307778757772
+    second: 16 room templates spritesheet 1_134
+  - first:
+      213: 3440171107372003417
+    second: 16 room templates spritesheet 1_135
+  - first:
+      213: -5283103617618505382
+    second: 16 room templates spritesheet 1_136
+  - first:
+      213: -4108727336169739589
+    second: 16 room templates spritesheet 1_137
+  - first:
+      213: -16008852606024686
+    second: 16 room templates spritesheet 1_138
+  - first:
+      213: -3131902004012186023
+    second: 16 room templates spritesheet 1_139
+  - first:
+      213: -3952748622746856341
+    second: 16 room templates spritesheet 1_140
+  - first:
+      213: -7818664873835188135
+    second: 16 room templates spritesheet 1_141
+  - first:
+      213: -2412643182959595621
+    second: 16 room templates spritesheet 1_142
+  - first:
+      213: 2751748754349863039
+    second: 16 room templates spritesheet 1_143
+  - first:
+      213: 3295478077470609398
+    second: 16 room templates spritesheet 1_144
+  - first:
+      213: 4383630474882640858
+    second: 16 room templates spritesheet 1_145
+  - first:
+      213: -4292132068234470315
+    second: 16 room templates spritesheet 1_146
+  - first:
+      213: 9080817697613660643
+    second: 16 room templates spritesheet 1_147
+  - first:
+      213: -7795912781823987831
+    second: 16 room templates spritesheet 1_148
+  - first:
+      213: -3523165318525753433
+    second: 16 room templates spritesheet 1_149
+  - first:
+      213: 2782526320384021433
+    second: 16 room templates spritesheet 1_150
+  - first:
+      213: 7272623054384051052
+    second: 16 room templates spritesheet 1_151
+  - first:
+      213: 6719011358858912356
+    second: 16 room templates spritesheet 1_152
+  - first:
+      213: -2264477785127162711
+    second: 16 room templates spritesheet 1_153
+  - first:
+      213: -2946136473751981542
+    second: 16 room templates spritesheet 1_154
+  - first:
+      213: 3328999432282142324
+    second: 16 room templates spritesheet 1_155
+  - first:
+      213: -5035843348041298848
+    second: 16 room templates spritesheet 1_156
+  - first:
+      213: -1697354137084444754
+    second: 16 room templates spritesheet 1_157
+  - first:
+      213: 5116656140584010782
+    second: 16 room templates spritesheet 1_158
+  - first:
+      213: -7455720787144208950
+    second: 16 room templates spritesheet 1_159
+  - first:
+      213: 5493525503273255875
+    second: 16 room templates spritesheet 1_160
+  - first:
+      213: -6412145922202052699
+    second: 16 room templates spritesheet 1_161
+  - first:
+      213: 8873921455030205206
+    second: 16 room templates spritesheet 1_162
+  - first:
+      213: -6066763328896259640
+    second: 16 room templates spritesheet 1_163
+  - first:
+      213: -521547307144299255
+    second: 16 room templates spritesheet 1_164
+  - first:
+      213: 3923996883553190780
+    second: 16 room templates spritesheet 1_165
+  - first:
+      213: -792198337075046010
+    second: 16 room templates spritesheet 1_166
+  - first:
+      213: -8053991153771875174
+    second: 16 room templates spritesheet 1_167
+  - first:
+      213: -573629411807327448
+    second: 16 room templates spritesheet 1_168
+  - first:
+      213: -1226486790679089663
+    second: 16 room templates spritesheet 1_169
+  - first:
+      213: -8196326907525746552
+    second: 16 room templates spritesheet 1_170
+  - first:
+      213: -1745211378550375456
+    second: 16 room templates spritesheet 1_171
+  - first:
+      213: -5351387664727588047
+    second: 16 room templates spritesheet 1_172
+  - first:
+      213: 5119875842228130235
+    second: 16 room templates spritesheet 1_173
+  - first:
+      213: -6824695782473649486
+    second: 16 room templates spritesheet 1_174
+  - first:
+      213: -5658517867318800028
+    second: 16 room templates spritesheet 1_175
+  - first:
+      213: 158760894348738510
+    second: 16 room templates spritesheet 1_176
+  - first:
+      213: -3830188404625683093
+    second: 16 room templates spritesheet 1_177
+  - first:
+      213: -7698667285448942689
+    second: 16 room templates spritesheet 1_178
+  - first:
+      213: 3196779156930945205
+    second: 16 room templates spritesheet 1_179
+  - first:
+      213: 8727073785167562665
+    second: 16 room templates spritesheet 1_180
+  - first:
+      213: -1443636271454321063
+    second: 16 room templates spritesheet 1_181
+  - first:
+      213: -8827079741062436976
+    second: 16 room templates spritesheet 1_182
+  - first:
+      213: -1120834267026497999
+    second: 16 room templates spritesheet 1_183
+  - first:
+      213: 6339340672210097550
+    second: 16 room templates spritesheet 1_184
+  - first:
+      213: -7499851790213207966
+    second: 16 room templates spritesheet 1_185
+  - first:
+      213: -1443162484585271179
+    second: 16 room templates spritesheet 1_186
+  - first:
+      213: -7603651816818346610
+    second: 16 room templates spritesheet 1_187
+  - first:
+      213: 1339661275885870112
+    second: 16 room templates spritesheet 1_188
+  - first:
+      213: -3244747104761560121
+    second: 16 room templates spritesheet 1_189
+  - first:
+      213: -3532091146604064885
+    second: 16 room templates spritesheet 1_190
+  - first:
+      213: -4847488309110477663
+    second: 16 room templates spritesheet 1_191
+  - first:
+      213: 4267043050297630515
+    second: 16 room templates spritesheet 1_192
+  - first:
+      213: 3781282498663410196
+    second: 16 room templates spritesheet 1_193
+  - first:
+      213: 1742243585803991869
+    second: 16 room templates spritesheet 1_194
+  - first:
+      213: 2040764672881761107
+    second: 16 room templates spritesheet 1_195
+  - first:
+      213: -1600483781363380427
+    second: 16 room templates spritesheet 1_196
+  - first:
+      213: -1810758326712204311
+    second: 16 room templates spritesheet 1_197
+  - first:
+      213: -2572661131554056960
+    second: 16 room templates spritesheet 1_198
+  - first:
+      213: 2428266275401316325
+    second: 16 room templates spritesheet 1_199
+  - first:
+      213: -889796859781282449
+    second: 16 room templates spritesheet 1_200
+  - first:
+      213: -2870095494488355487
+    second: 16 room templates spritesheet 1_201
+  - first:
+      213: 1345838052065862252
+    second: 16 room templates spritesheet 1_202
+  - first:
+      213: 212221050952152811
+    second: 16 room templates spritesheet 1_203
+  - first:
+      213: 1886464307639643918
+    second: 16 room templates spritesheet 1_204
+  - first:
+      213: 3560747083503488714
+    second: 16 room templates spritesheet 1_205
+  - first:
+      213: -7516349778778215213
+    second: 16 room templates spritesheet 1_206
+  - first:
+      213: -6039335938915003390
+    second: 16 room templates spritesheet 1_207
+  - first:
+      213: -5811983654756703886
+    second: 16 room templates spritesheet 1_208
+  - first:
+      213: -59459663465470865
+    second: 16 room templates spritesheet 1_209
+  - first:
+      213: -1207184965317048249
+    second: 16 room templates spritesheet 1_210
+  - first:
+      213: 3702304764030384293
+    second: 16 room templates spritesheet 1_211
+  - first:
+      213: -5680136511483134335
+    second: 16 room templates spritesheet 1_212
+  - first:
+      213: 1524818508589235963
+    second: 16 room templates spritesheet 1_213
+  - first:
+      213: 7191747531124205396
+    second: 16 room templates spritesheet 1_214
+  - first:
+      213: 7717178401979971711
+    second: 16 room templates spritesheet 1_215
+  - first:
+      213: 5520765378574913348
+    second: 16 room templates spritesheet 1_216
+  - first:
+      213: -8723403663904485877
+    second: 16 room templates spritesheet 1_217
+  - first:
+      213: 4913916652237054651
+    second: 16 room templates spritesheet 1_218
+  - first:
+      213: -7340268202950115771
+    second: 16 room templates spritesheet 1_219
+  - first:
+      213: -4126767211691147353
+    second: 16 room templates spritesheet 1_220
+  - first:
+      213: -7378191470032763464
+    second: 16 room templates spritesheet 1_221
+  - first:
+      213: 173457283838697174
+    second: 16 room templates spritesheet 1_222
+  - first:
+      213: 8397965838957460794
+    second: 16 room templates spritesheet 1_223
+  - first:
+      213: 5051768029240008652
+    second: 16 room templates spritesheet 1_224
+  - first:
+      213: -2569416116591169080
+    second: 16 room templates spritesheet 1_225
+  - first:
+      213: -9099673495857580068
+    second: 16 room templates spritesheet 1_226
+  - first:
+      213: 1186851613789710795
+    second: 16 room templates spritesheet 1_227
+  - first:
+      213: -5572102099607943796
+    second: 16 room templates spritesheet 1_228
+  - first:
+      213: -1079321104838012898
+    second: 16 room templates spritesheet 1_229
+  - first:
+      213: -8381325978445662521
+    second: 16 room templates spritesheet 1_230
+  - first:
+      213: 1809396171717887906
+    second: 16 room templates spritesheet 1_231
+  - first:
+      213: -3992497553223607271
+    second: 16 room templates spritesheet 1_232
+  - first:
+      213: 604805236570569803
+    second: 16 room templates spritesheet 1_233
+  - first:
+      213: -4043958426613313564
+    second: 16 room templates spritesheet 1_234
+  - first:
+      213: 6588893572651826149
+    second: 16 room templates spritesheet 1_235
+  - first:
+      213: 974815201852271152
+    second: 16 room templates spritesheet 1_236
+  - first:
+      213: -2823795000786712495
+    second: 16 room templates spritesheet 1_237
+  - first:
+      213: -6136865693152274692
+    second: 16 room templates spritesheet 1_238
+  - first:
+      213: -8795698450460843060
+    second: 16 room templates spritesheet 1_239
+  - first:
+      213: -7333870921606109372
+    second: 16 room templates spritesheet 1_240
+  - first:
+      213: 877231161058047680
+    second: 16 room templates spritesheet 1_241
+  - first:
+      213: -4109243825039589454
+    second: 16 room templates spritesheet 1_242
+  - first:
+      213: 5732494285206900361
+    second: 16 room templates spritesheet 1_243
+  - first:
+      213: 1116096727620194078
+    second: 16 room templates spritesheet 1_244
+  - first:
+      213: 7980878429399921193
+    second: 16 room templates spritesheet 1_245
+  - first:
+      213: -8571269270471351209
+    second: 16 room templates spritesheet 1_246
+  - first:
+      213: -1799687270211505186
+    second: 16 room templates spritesheet 1_247
+  - first:
+      213: -474809389864315683
+    second: 16 room templates spritesheet 1_248
+  - first:
+      213: 4208943040346892502
+    second: 16 room templates spritesheet 1_249
+  - first:
+      213: -8687395146484051499
+    second: 16 room templates spritesheet 1_250
+  - first:
+      213: -3413159404355151896
+    second: 16 room templates spritesheet 1_251
+  - first:
+      213: -7526213424543456318
+    second: 16 room templates spritesheet 1_252
+  - first:
+      213: 6568769165040083242
+    second: 16 room templates spritesheet 1_253
+  - first:
+      213: 3503497146537750352
+    second: 16 room templates spritesheet 1_254
+  - first:
+      213: 5653239439847352885
+    second: 16 room templates spritesheet 1_255
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: B
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b4235e86ba75eb0800000000000000
+      internalID: -4731124416519189749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BL
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477f4f1e25ee2e8e0800000000000000
+      internalID: -1665506872428005516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c5ea1b86eb50b90800000000000000
+      internalID: -7276200266080297854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Closed
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82069ba3b20476990800000000000000
+      internalID: -7392869708892381144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fdb7ed65c97bc10800000000000000
+      internalID: 2069294450713812762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RB
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59dde61e0aca2c590800000000000000
+      internalID: -7655366609599537771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RBL
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926d024fdaaf51f50800000000000000
+      internalID: 6851658033146156585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RL
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39b627488cc42bc0800000000000000
+      internalID: -3808694499167258308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e87b5e42541c630800000000000000
+      internalID: 3945510773328416309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TB
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a336da678429f5210800000000000000
+      internalID: 1323937655396590394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBL
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7459dfe9294397620800000000000000
+      internalID: 2772304849960539463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TL
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af4fcf8ce1524b10800000000000000
+      internalID: 1964222463953817506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TR
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f076319d9279320800000000000000
+      internalID: 2564564525120950149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRB
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb6c1af3a414ea80800000000000000
+      internalID: -8438597107277075515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRBL
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbe1b75256fecff0800000000000000
+      internalID: -13802915316503585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TRL
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce50b88ed7223ea0800000000000000
+      internalID: -5894605125545075005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cca058b297e1d5742ad3820984ec941f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
