@@ -6,13 +6,13 @@ public class Bullet_Movement : MonoBehaviour
     private Vector3 travelledDistance;
 
     private GameObject weapon;
-    private Shooting weaponStats;
+    private Weapon weaponStats;
 
     private void Awake()
     {
         travelledDistance = new Vector3(0, 0, 0);
 
-        weaponStats = GameObject.FindGameObjectWithTag("EquippedWeapon").GetComponent<Shooting>();
+        weaponStats = GameObject.FindGameObjectWithTag("EquippedWeapon").GetComponent<Weapon>();
     }
 
     public void Angle(float bullet, Vector3 mousePosition, Vector3 weaponPosition)
@@ -24,12 +24,12 @@ public class Bullet_Movement : MonoBehaviour
 
         radians += bullet;
 
-        float accuracyMod = Random.Range(-weaponStats.Accuracy, weaponStats.Accuracy) * Mathf.Deg2Rad;
+        float accuracyMod = Random.Range(-weaponStats.accuracy, weaponStats.accuracy) * Mathf.Deg2Rad;
         radians += accuracyMod;
 
         velocity = new Vector3(Mathf.Cos(radians), Mathf.Sin(radians), 0);
 
-        velocity *= weaponStats.BulletSpeed * Time.fixedDeltaTime;
+        velocity *= weaponStats.bulletSpeed * Time.fixedDeltaTime;
     }
 
     void FixedUpdate()
@@ -38,7 +38,7 @@ public class Bullet_Movement : MonoBehaviour
 
         travelledDistance += velocity;
 
-        if (travelledDistance.magnitude >= weaponStats.Range)
+        if (travelledDistance.magnitude >= weaponStats.range)
             Destroy(gameObject);
     }
 }

@@ -1,74 +1,65 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class Pickup : MonoBehaviour
 {
-    public Transform weaponTrans;
-
     private GameObject weapon;
 
-    private bool inRange = false; // "Can pick up"
-    private bool weaponEquipped = false;
-
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Weapon"))
-            weapon = other.gameObject;
-    }
-
+#region Trigger checks
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Weapon"))
         {
-            inRange = true;
+            if (weapon is null)
+                weapon = other.gameObject;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        inRange = false;
+        weapon = null;
     }
+#endregion
 
-    public void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && inRange)
+        if (Input.GetKeyDown(KeyCode.E))
             PickupWeapon();
 
-        if (Input.GetKeyDown(KeyCode.G) && weaponEquipped)
+        if (Input.GetKeyDown(KeyCode.G))
             Drop();
-
     }
 
-    void PickupWeapon() 
+    private void PickupWeapon() 
     {
-        if (!weaponEquipped)
-        {
-            // Enable shooting for the weapon
-            weapon.GetComponent<Shooting>().enabled = true;
+        if (weapon is null) return;
 
-            // Set position and parent to follow the player around
-            weapon.transform.SetParent(weaponTrans);
-            weapon.transform.position = weaponTrans.position;
+        Drop();
 
-            // Tell the program that the weapon has been equipped
-            weapon.tag = "EquippedWeapon";
-            weaponEquipped = true;
-        }
+        // Enable shooting for the weapon
+        weapon.GetComponent<Weapon>().enabled = true;
 
+        // Set position and parent to follow the player around
+        weapon.transform.SetParent(transform.GetChild(0).transform);
+        weapon.transform.position = transform.GetChild(0).transform.position;
+
+        // Tell the program that the weapon has been equipped
+        weapon.tag = "EquippedWeapon";
     }
 
-    void Drop()
+    private void Drop()
     {
+        if (transform.GetChild(0).childCount <= 0) return;
+
         GameObject equippedWeapon = transform.GetChild(0).GetChild(0).gameObject;
 
-        // Disable shooting for the weapon
-        equippedWeapon.GetComponent<Shooting>().enabled = false;
+        equippedWeapon.GetComponent<Weapon>().enabled = false;
 
         // Force the player to abandon their child
-        equippedWeapon.transform.SetParent(null);
+        equippedWeapon.transform.SetParent(GameObject.Find("Dropped Weapons").transform);
 
-        // Tell the program that the weapon has been drop
+        // Tell the program that the weapon has been dropped
         equippedWeapon.tag = "Weapon";
-        weaponEquipped = false;
     }
 }

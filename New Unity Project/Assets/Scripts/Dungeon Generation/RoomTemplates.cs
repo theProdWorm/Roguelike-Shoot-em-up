@@ -10,9 +10,9 @@ public class RoomTemplates : MonoBehaviour
 
     public GameObject closed;
 
-    public Dictionary<GameObject, int> rooms; // Keeps track of all rooms, as well as the direction in which they were required to have an opening
+    public Dictionary<GameObject, int> rooms = new Dictionary<GameObject, int>(); // Keeps track of all rooms, as well as the direction in which they were required to have an opening
 
-    private readonly float timeBeforeNewInstantiate = 5.0f;
+    public float wait = 5.0f;
 
     private void Update()
     {

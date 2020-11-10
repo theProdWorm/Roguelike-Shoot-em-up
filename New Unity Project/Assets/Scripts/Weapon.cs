@@ -1,30 +1,23 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Shooting : MonoBehaviour
+public class Weapon : MonoBehaviour
 {
-    public float Damage;
-    public float FireRate; // Interval between bullets
-    public int Bullets;
-    public float Range;
-    public float BulletSpeed;
-    public float BurstDelay;
-    public float Accuracy;
+    public float damage;
+    public float fireRate; // Interval between bullets
+    public int bullets;
+    public float range;
+    public float bulletSpeed;
+    public float burstDelay;
+    public float accuracy;
 
-    public bool Spread;
-    public bool Burst;
-
-    protected int bulletIteration;
+    public bool spread;
+    public bool burst;
 
     public GameObject Bullet;
 
     private Vector3 mousePosition;
-    private bool canShoot;
-
-    private void Start()
-    {
-        canShoot = true;
-    }
+    private bool canShoot = true;
 
     public void Positions()
     {
@@ -41,7 +34,7 @@ public class Shooting : MonoBehaviour
         {
             Positions();
 
-            if (Burst)
+            if (burst)
             {
                 StartCoroutine(FireBurst());
                 return;
@@ -55,11 +48,11 @@ public class Shooting : MonoBehaviour
     {
         canShoot = false;
 
-        for (int i = 0; i < Bullets; i++)
+        for (int i = 0; i < bullets; i++)
         {
             GameObject bullet = Instantiate(Bullet, gameObject.transform.position, Quaternion.identity);
 
-            float spread = Spread ? FireSpread(i + 1) : 0;
+            float spread = this.spread ? FireSpread(i + 1) : 0;
 
             bullet.GetComponent<Bullet_Movement>().Angle(spread, mousePosition, transform.position);
         }
@@ -71,16 +64,16 @@ public class Shooting : MonoBehaviour
     {
         canShoot = false;
 
-        for (int i = 0; i < Bullets; i++)
+        for (int i = 0; i < bullets; i++)
         {
             GameObject bullet = Instantiate(Bullet, gameObject.transform.position, Quaternion.identity);
 
-            float spread = Spread ? FireSpread(i + 1) : 0;
+            float spread = this.spread ? FireSpread(i + 1) : 0;
 
             bullet.GetComponent<Bullet_Movement>().Angle(spread, mousePosition, transform.position);
 
             yield return new WaitForFixedUpdate();
-            yield return new WaitForSecondsRealtime(BurstDelay);
+            yield return new WaitForSecondsRealtime(burstDelay);
         }
 
         StartCoroutine(FireDelay());
@@ -88,17 +81,17 @@ public class Shooting : MonoBehaviour
 
     private IEnumerator FireDelay()
     {
-        yield return new WaitForSecondsRealtime(FireRate);
+        yield return new WaitForSecondsRealtime(fireRate);
         canShoot = true;
     }
 
     private float FireSpread(float i)
     {
-        float mid = (Bullets + 1) / 2;
+        float mid = (bullets + 1) / 2;
 
         i -= mid;
 
-        float angle = i / mid * (Bullets * 3);
+        float angle = i / mid * (bullets * 3);
         angle = Mathf.Deg2Rad * angle;
 
         return angle;

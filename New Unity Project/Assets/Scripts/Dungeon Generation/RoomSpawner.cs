@@ -33,42 +33,35 @@ public class RoomSpawner : MonoBehaviour
             switch (openingDirection)
             {
                 case 1:
-                    rand = UnityEngine.Random.Range(0, templates.topRooms.Length);
+                    rand = Random.Range(0, templates.topRooms.Length);
                     room = Instantiate(templates.topRooms[rand], transform.position, Quaternion.identity);
-
-                    Invoke("SetOpening", .1f);
                     break;
 
                 case 2:
-                    rand = UnityEngine.Random.Range(0, templates.rightRooms.Length);
+                    rand = Random.Range(0, templates.rightRooms.Length);
                     room = Instantiate(templates.rightRooms[rand], transform.position, Quaternion.identity);
-
-                    Invoke("SetOpening", .1f);
                     break;
 
                 case 3:
-                    rand = UnityEngine.Random.Range(0, templates.bottomRooms.Length);
+                    rand = Random.Range(0, templates.bottomRooms.Length);
                     room = Instantiate(templates.bottomRooms[rand], transform.position, Quaternion.identity);
-
-                    Invoke("SetOpening", .1f);
                     break;
 
                 case 4:
-                    rand = UnityEngine.Random.Range(0, templates.leftRooms.Length);
+                    rand = Random.Range(0, templates.leftRooms.Length);
                     room = Instantiate(templates.leftRooms[rand], transform.position, Quaternion.identity);
-
-                    Invoke("SetOpening", .1f);
                     break;
 
                 default:
                     break;
             }
 
+            SetOpening();
             spawned = true;
         }
     }
 
-    private void SetOpening()
+    public void SetOpening()
     {
         room.GetComponent<AddRoom>().requiredOpening = openingDirection;
     }

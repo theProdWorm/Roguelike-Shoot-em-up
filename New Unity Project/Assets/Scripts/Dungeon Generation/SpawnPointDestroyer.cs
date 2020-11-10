@@ -12,6 +12,7 @@ public class SpawnPointDestroyer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(other.gameObject);
+        if (other.CompareTag("SpawnPoint"))
+            Destroy(other.gameObject);
     }
 }
