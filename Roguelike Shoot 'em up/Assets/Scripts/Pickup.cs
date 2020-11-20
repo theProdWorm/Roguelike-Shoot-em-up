@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.PlayerLoop;
+﻿using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
@@ -35,31 +33,36 @@ public class Pickup : MonoBehaviour
     {
         if (weapon is null) return;
 
-        Drop();
+        if(!Drop()) return; // Returns if the weapon cannot be dropped
 
-        // Enable shooting for the weapon
         weapon.GetComponent<Weapon>().enabled = true;
 
-        // Set position and parent to follow the player around
-        weapon.transform.SetParent(transform.GetChild(0).transform);
-        weapon.transform.position = transform.GetChild(0).transform.position;
-
-        // Tell the program that the weapon has been equipped
-        weapon.tag = "EquippedWeapon";
+        // OnEnable() function handles the rest
     }
 
-    private void Drop()
+    private bool Drop() // Returns false if the weapon cannot be dropped
     {
-        if (transform.GetChild(0).childCount <= 0) return;
+        Transform weapon;
 
-        GameObject equippedWeapon = transform.GetChild(0).GetChild(0).gameObject;
+        // Set weapon to equal the currently equipped weapon of the player; if they have none, return false - "the weapon could not be dropped"
+        try {
+            weapon = transform.GetChild(0).GetChild(0);
+        }
+        catch {
+            return true;
+        }
 
-        equippedWeapon.GetComponent<Weapon>().enabled = false;
+        Weapon weaponScript = weapon.GetComponent<Weapon>();
+        if (!weaponScript.canDisable) return false;
+
+        weaponScript.enabled = false;
 
         // Force the player to abandon their child
-        equippedWeapon.transform.SetParent(GameObject.Find("Dropped Weapons").transform);
+        weapon.transform.SetParent(GameObject.Find("Dropped Weapons").transform);
+        weapon.transform.rotation = Quaternion.identity;
+        
+        weapon.tag = "Weapon";
 
-        // Tell the program that the weapon has been dropped
-        equippedWeapon.tag = "Weapon";
+        return true;
     }
 }

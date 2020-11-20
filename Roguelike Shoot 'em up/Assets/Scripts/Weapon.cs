@@ -3,45 +3,92 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public float damage;
-    public float fireRate; // Interval between bullets
-    public int bullets;
-    public float range;
-    public float bulletSpeed;
-    public float burstDelay;
-    public float accuracy;
+    public float damage, // The amount of premitigation damage the weapon deals
+                fireRate, // Interval between bursts
+                burstDelay, // Interval between single bullets in a burst
+                bullets, // Amount of bullets in a single burst
+                range, // How many units the bullets can move before disappearing
+                bulletSpeed, // How fast the bullets travel
+                inaccuracy; // How many degrees that bullets can randomly direct themselves in from the original direction
 
-    public bool spread;
-    public bool burst;
+    public bool spread,
+                burst,
+                explosive;
 
     public GameObject Bullet;
 
-    private Vector3 mousePosition;
+    private AudioSource audioSource;
+
+    private Vector3 mouseClickPosition;
     private bool canShoot = true;
+    public bool canDisable = true;
 
-    public void Positions()
+    private void Start()
     {
-        mousePosition = Input.mousePosition;
+        audioSource = GetComponent<AudioSource>();
+    }
 
-        // Translates player position in game into player position on screen
-        Vector3 offset = Camera.main.WorldToScreenPoint(transform.position);
-        mousePosition -= offset;
+    private void OnEnable()
+    {
+        Transform weapon = GameObject.Find("Weapon").transform;
+
+        // Set position and parent to follow the player around
+        transform.SetParent(weapon);
+        transform.position = weapon.position;
+
+        tag = "EquippedWeapon";
     }
 
     private void Update()
     {
+        Rotate();
+
         if (Input.GetButton("Fire1") && canShoot)
         {
             Positions();
 
+            canDisable = false;
             if (burst)
             {
-                StartCoroutine(FireBurst());
+                StartCoroutine(Burst());
                 return;
             }
 
             Fire();
         }
+    }
+
+    public void Positions()
+    {
+        mouseClickPosition = Input.mousePosition;
+
+        // Gets and sets offset between click position and shooting point
+        Vector3 offset = Camera.main.WorldToScreenPoint(transform.position);
+        mouseClickPosition -= offset;
+    }
+
+    public float Angle(Vector2 from, Vector2 to)
+    {
+        float x = to.x - from.x;
+        float y = to.y - from.y;
+
+        float radians = Mathf.Atan2(y, x);
+
+        return radians;
+    }
+
+    public void Rotate()
+    {
+        Transform hand = GameObject.Find("Weapon").GetComponent<Transform>();
+
+        // Gets and sets offset between mouse position and hand position
+        Vector3 _mPos = Input.mousePosition;
+        Vector3 offset = Camera.main.WorldToScreenPoint(transform.position);
+        _mPos -= offset;
+
+        float angle = Angle(hand.position, _mPos) * Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 
     private void Fire()
@@ -50,42 +97,51 @@ public class Weapon : MonoBehaviour
 
         for (int i = 0; i < bullets; i++)
         {
-            GameObject bullet = Instantiate(Bullet, gameObject.transform.position, Quaternion.identity);
-
-            float spread = this.spread ? FireSpread(i + 1) : 0;
-
-            bullet.GetComponent<Bullet_Movement>().Angle(spread, mousePosition, transform.position);
+            InstantiateBullet(i);
         }
+
+        audioSource.PlayOneShot(audioSource.clip);
 
         StartCoroutine(FireDelay());
     }
 
-    private IEnumerator FireBurst()
+    private IEnumerator Burst()
     {
         canShoot = false;
 
         for (int i = 0; i < bullets; i++)
         {
-            GameObject bullet = Instantiate(Bullet, gameObject.transform.position, Quaternion.identity);
+            InstantiateBullet(i);
 
-            float spread = this.spread ? FireSpread(i + 1) : 0;
+            audioSource.PlayOneShot(audioSource.clip);
 
-            bullet.GetComponent<Bullet_Movement>().Angle(spread, mousePosition, transform.position);
-
-            yield return new WaitForFixedUpdate();
-            yield return new WaitForSecondsRealtime(burstDelay);
+            yield return new WaitForSeconds(burstDelay);
         }
 
         StartCoroutine(FireDelay());
     }
 
+    private void InstantiateBullet(int i)
+    {
+        GameObject bullet = Instantiate(Bullet, transform.position, Quaternion.identity);
+
+        float spread = this.spread ? Spread(i + 1) : 0;
+        float angle = Angle(transform.position, mouseClickPosition);
+        float inaccuracy = Random.Range(-this.inaccuracy, this.inaccuracy) * Mathf.Deg2Rad;
+
+        float finalAngle = spread + angle + inaccuracy;
+        //bullet.GetComponent<Bullet>().SetVelocity(finalAngle, bulletSpeed);
+    }
+
     private IEnumerator FireDelay()
     {
-        yield return new WaitForSecondsRealtime(fireRate);
+        canDisable = true;
+
+        yield return new WaitForSeconds(fireRate);
         canShoot = true;
     }
 
-    private float FireSpread(float i)
+    private float Spread(float i)
     {
         float mid = (bullets + 1) / 2;
 

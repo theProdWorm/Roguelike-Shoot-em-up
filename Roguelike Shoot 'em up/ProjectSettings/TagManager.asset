@@ -4,10 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - SpawnPoint
   - Weapon
   - EquippedWeapon
-  - MainWeapon
+  - Enemy
+  - Destroyer
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -17,11 +18,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Room
+  - Bullet
+  - Enemy
+  - SpawnPoints
   - 
   - 
   - 
