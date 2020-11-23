@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float factor;
+    public Transform player;
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        Vector2 movement = Vector2.Lerp(transform.position, player.position, factor);
+
+        transform.position = new Vector3(movement.x, movement.y, -100);
     }
 }
