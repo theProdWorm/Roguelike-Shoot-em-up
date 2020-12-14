@@ -4,7 +4,7 @@ public class Pickup : MonoBehaviour
 {
     private GameObject weapon;
 
-#region Trigger checks
+    #region Trigger checks
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Weapon"))
@@ -18,7 +18,7 @@ public class Pickup : MonoBehaviour
     {
         weapon = null;
     }
-#endregion
+    #endregion
 
     private void Update()
     {
@@ -29,11 +29,11 @@ public class Pickup : MonoBehaviour
             Drop();
     }
 
-    private void PickupWeapon() 
+    private void PickupWeapon()
     {
         if (weapon is null) return;
 
-        if(!Drop()) return; // Returns if the weapon cannot be dropped
+        if (!Drop()) return; // Returns if the weapon cannot be dropped
 
         weapon.GetComponent<Weapon>().enabled = true;
 
@@ -45,10 +45,12 @@ public class Pickup : MonoBehaviour
         Transform weapon;
 
         // Set weapon to equal the currently equipped weapon of the player; if they have none, return false - "the weapon could not be dropped"
-        try {
+        try
+        {
             weapon = transform.GetChild(0).GetChild(0);
         }
-        catch {
+        catch
+        {
             return true;
         }
 
@@ -60,7 +62,7 @@ public class Pickup : MonoBehaviour
         // Force the player to abandon their child
         weapon.transform.SetParent(GameObject.Find("Dropped Weapons").transform);
         weapon.transform.rotation = Quaternion.identity;
-        
+
         weapon.tag = "Weapon";
 
         return true;

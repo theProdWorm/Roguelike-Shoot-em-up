@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 
-public class CharacterMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public float speed = 3.0f;
+    public float speed;
+    public float health;
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -20,5 +21,10 @@ public class CharacterMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + velocity * speed * Time.fixedDeltaTime);
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
     }
 }

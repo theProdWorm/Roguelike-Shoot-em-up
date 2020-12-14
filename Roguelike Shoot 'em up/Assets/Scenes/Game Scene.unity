@@ -229,7 +229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51865503}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.462, y: -0.901, z: -43.45192}
+  m_LocalPosition: {x: -1.462, y: -0.901, z: 0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 1}
   m_Children:
   - {fileID: 1585545480}
@@ -379,6 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  health: 100
   rb: {fileID: 102342522}
   animator: {fileID: 102342517}
 --- !u!114 &102342520
@@ -577,9 +578,10 @@ GameObject:
   m_Component:
   - component: {fileID: 375424053}
   - component: {fileID: 375424052}
-  - component: {fileID: 375424051}
   - component: {fileID: 375424055}
   - component: {fileID: 375424054}
+  - component: {fileID: 375424051}
+  - component: {fileID: 375424056}
   m_Layer: 11
   m_Name: Enemy
   m_TagString: Enemy
@@ -596,11 +598,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 375424050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66e3a4e5adc2b154692ffd27ac62be4f, type: 3}
+  m_Script: {fileID: 11500000, guid: f414595b251051c4e9858a840d9ff48a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 25490128
-  health: 0
+  maxHealth: 10
+  health: 10
+  collisionDmg: 1
+  speed: 2
+  range: 0.1
+  player: {fileID: 102342518}
+  animator: {fileID: 0}
 --- !u!212 &375424052
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -703,6 +710,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &375424056
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375424050}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8c5a958cf9c726b40b2538102b22a97e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &394530584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,6 +1101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 947f0818691b6d84fa03dd0054cda746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  factor: 0
+  player: {fileID: 102342518}
 --- !u!1 &1401758965
 GameObject:
   m_ObjectHideFlags: 0
